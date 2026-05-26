@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projects by Clement Mathole - Software Developer">
+        <title>Clement-Mathole - Projects</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <a href="index.html" style="text-decoration: none;"><h1 class="brand">M</h1></a>
+                <div class="nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="projects.html" class="active">PROJECTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                    <div class="media-contacts mc-1">
+                    <ul>
+                        <li><a href="https://github.com/ClementMathole"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="media-contacts mc-2">
+                    <ul>
+                        <li><a href="https://github.com/ClementMathole"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div> 
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="projects-hero">
+                <p class="mini-title">PROJECTS</p>
+                <div class="hero-row">
+                    <div>
+                        <h1>Selected <span class="gradient-text">Work</span></h1>
+                        <p>A curated collection of projects from enterprise systems, mobile apps, and developer tooling.</p>
+                    </div>
+                    <div class="project-count">
+                        <div class="num">17+</div>
+                        <span>completed projects</span>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-bar">
+                <div class="filter-pills">
+                    <button class="pill active" onclick="filterProjects('all', this)">All</button>
+                    <button class="pill" onclick="filterProjects('backend', this)">Backend</button>
+                    <button class="pill" onclick="filterProjects('mobile', this)">Mobile</button>
+                    <button class="pill" onclick="filterProjects('frontend', this)">Frontend</button>
+                    <button class="pill" onclick="filterProjects('tooling', this)">Tooling</button>
+                    <button class="pill" onclick="filterProjects('cloud', this)">Cloud</button>
+                </div>
+                <span class="sort-label">Showing <span id="count">6</span> projects</span>
+            </div>
+            <hr>
+            <div class="projects-grid" id="projectsGrid">
+
+                <a href="https://github.com/ClementMathole/CapableZA" class="proj-card" data-cat="mobile backend">
+                    <div class="proj-status live">Featured</div>
+                    <div class="proj-card-body">
+                        <p class="proj-card-tag">Full-Stack</p>
+                        <h2>Skills Audit System</h2>
+                        <p>A cross-platform audit system designed to streamline the process of tracking, validating, and reporting employee competencies across an organisation.</p>
+                    </div>
+                    <div class="proj-card-footer">
+                        <div class="proj-stack">
+                            <img src="./assets/icons8-c-sharp-logo-50.png" alt="C#">
+                            <img src="./assets/icons8-flutter-50.png" alt="Flutter">
+                            <img src="./assets/icons8-firebase-48.png" alt="Firebase">
+                            <img src="./assets/icons8-jquery-50.png" alt="jQuery">
+                            <img src="./assets/icons8-bootstrap-50.png" alt="Bootstrap">
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right proj-arrow"></i>
+                    </div>
+                </a>
+
+                <a href="https://github.com/ClementMathole/local-nuget-cleaner" class="proj-card" data-cat="tooling backend">
+                    <div class="proj-status live">Featured</div>
+                    <div class="proj-card-body">
+                        <p class="proj-card-tag">Tooling · Backend</p>
+                        <h2>Local NuGet Cache Cleaner</h2>
+                        <p>Enterprise-grade CLI tool built to safely identify and remove stale NuGet packages from global cache without breaking local builds.</p>
+                    </div>
+                    <div class="proj-card-footer">
+                        <div class="proj-stack">
+                            <img src="./assets/icons8-c-sharp-logo-50.png" alt="C#">
+                            <img src="./assets/icons8-.net-framework-48.png" alt=".NET">
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right proj-arrow"></i>
+                    </div>
+                </a>
+
+                <a href="https://github.com/ClementMathole/AuthenticationAPI" class="proj-card" data-cat="backend cloud">
+                    <div class="proj-card-body">
+                        <p class="proj-card-tag">Backend · cloud </p>
+                        <h2>Authentication REST API</h2>
+                        <p>A .NET Web API that provides authentication and authorization solution with JWT, refresh tokens, email confirmation, rate limiting, and account lockout.</p>
+                    </div>
+                    <div class="proj-card-footer">
+                        <div class="proj-stack">
+                            <img src="./assets/icons8-c-sharp-logo-50.png" alt="C#">
+                            <img src="./assets/icons8-azure-48.png" alt="Azure">
+                            <img src="./assets/icons8-.net-framework-48.png" alt=".NET">
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right proj-arrow"></i>
+                    </div>
+                </a>
+
+                <!-- <a href="#" class="proj-card" data-cat="mobile">
+                    <div class="proj-card-body">
+                        <p class="proj-card-tag">Mobile · Dart</p>
+                        <h2>Flutter E-Commerce App</h2>
+                        <p>Full-featured cross-platform shopping experience with Firebase authentication, real-time cart sync, and payment integration.</p>
+                    </div>
+                    <div class="proj-card-footer">
+                        <div class="proj-stack">
+                            <img src="./assets/icons8-flutter-50.png" alt="Flutter">
+                            <img src="./assets/icons8-dart-50.png" alt="Dart">
+                            <img src="./assets/icons8-firebase-48.png" alt="Firebase">
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right proj-arrow"></i>
+                    </div>
+                </a> -->
+
+                <a href="#" class="proj-card" data-cat="frontend">
+                    <div class="proj-card-body">
+                        <p class="proj-card-tag">Frontend · React</p>
+                        <h2>Admin Dashboard UI</h2>
+                        <p>Responsive admin interface with data tables, role-based access control views, and real-time metric charts using Recharts.</p>
+                    </div>
+                    <div class="proj-card-footer">
+                        <div class="proj-stack">
+                            <img src="./assets/icons8-react-js-50.png" alt="React">
+                            <img src="./assets/icons8-javascript-50.png" alt="JS">
+                            <img src="./assets/icons8-css-50.png" alt="CSS">
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right proj-arrow"></i>
+                    </div>
+                </a>
+
+                <!-- <a href="#" class="proj-card" data-cat="backend">
+                    <div class="proj-card-body">
+                        <p class="proj-card-tag">Backend · Database</p>
+                        <h2>Inventory Management API</h2>
+                        <p>RESTful API for stock tracking with MySQL, stored procedures, and Excel export endpoints for business reporting.</p>
+                    </div>
+                    <div class="proj-card-footer">
+                        <div class="proj-stack">
+                            <img src="./assets/icons8-c-sharp-logo-50.png" alt="C#">
+                            <img src="./assets/icons8-mysql-24.png" alt="MySQL">
+                            <img src="./assets/icons8-.net-framework-48.png" alt=".NET">
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right proj-arrow"></i>
+                    </div>
+                </a> -->
+                <a href="https://github.com/ClementMathole/clement" class="proj-card" data-cat="frontend">
+                    <div class="proj-card-body">
+                        <p class="proj-card-tag">Frontend · Design</p>
+                        <h2>Portfolio Website</h2>
+                        <p>This very site, a minimal, responsive personal portfolio showcasing work, skills, and contact.</p>
+                    </div>
+                    <div class="proj-card-footer">
+                        <div class="proj-stack">
+                            <img src="./assets/icons8-html-50.png" alt="HTML">
+                            <img src="./assets/icons8-css-50.png" alt="CSS">
+                            <img src="./assets/icons8-javascript-50.png" alt="JS">
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right proj-arrow"></i>
+                    </div>
+                </a>
+
+                <a href="#" class="proj-card" data-cat="cloud tooling">
+                    <div class="proj-card-body">
+                        <p class="proj-card-tag">Cloud · Tooling</p>
+                        <h2>Docker Compose Dev Environment</h2>
+                        <p>Containerised local development stack with SQL Server, API, and reverse proxy, enabling one-command project setup.</p>
+                    </div>
+                    <div class="proj-card-footer">
+                        <div class="proj-stack">
+                            <img src="./assets/icons8-docker-50.png" alt="Docker">
+                            <img src="./assets/icons8-c-sharp-logo-50.png" alt="C#">
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right proj-arrow"></i>
+                    </div>
+                </a>
+
+            </div>
+            <div class="projects-cta">
+                <p>Want to see more or discuss a project?</p>
+                <a href="contact.html">Get in Touch</a>
+            </div>
+        </main>
+
+        <hr>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; <span id="year"></span> Clement Mathole. All rights reserved.</p>
+                <p>icons by <a href="#">icons8</a></p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Contact Clement Mathole - Software Developer">
+        <title>Clement-Mathole — Contact</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <a href="index.html" style="text-decoration: none;"><h1 class="brand">M</h1></a>
+                <div class="nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="contact.html" class="active">CONTACT</a></li>
+                    </ul>
+                    <div class="media-contacts mc-1">
+                    <ul>
+                        <li><a href="https://github.com/ClementMathole"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="media-contacts mc-2">
+                    <ul>
+                        <li><a href="https://github.com/ClementMathole"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div> 
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="contact-wrapper">
+                <div class="contact-left">
+                    <p class="mini-title">CONTACT</p>
+                    <h1>Got Something in Mind? <span class="gradient-text">Send a Quick Message</span></h1>
+                    <p>Have a project in mind, a role you think I'd be a great fit for, or just want to say hello? Drop me a message. I'll get back to you promptly.</p>
+
+                    <div class="contact-info">
+                        <!-- <div class="info-item">
+                            <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
+                            <div class="info-text">
+                                <span>Email</span>
+                                <a href="mailto:clementmathole003@gmail.com">clementmathole@gmail.com</a>
+                            </div>
+                        </div> -->
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-text">
+                                <span>Location</span>
+                                <p>Mpumalanga, South Africa</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+                            <div class="info-text">
+                                <span>Response time</span>
+                                <p>Usually within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-row">
+                        <a href="https://github.com/ClementMathole" class="social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-link" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-divider"></div>
+                <div class="contact-right">
+                    <h2>Send a Message</h2>
+
+                    <div class="contact-form" id="contactForm" action='https://formspree.io/f/xgoqzopp' method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" placeholder="John" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" placeholder="Doe" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="youremail@gmail.com" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="Project inquiry, job opportunity…" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Tell me what you have in mind…"></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <p>I'll never share your information.</p>
+                            <button id="send-btn" onclick="handleSubmit()">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-success" id="formSuccess">
+                        <div class="check-circle"><i class="fa-solid fa-check"></i></div>
+                        <h3>Message sent!</h3>
+                        <p>Thanks for reaching out. I'll be in touch soon.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <hr>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; <span id="year"></span> Clement Mathole. All rights reserved.</p>
+                <p>icons by <a href="#">icons8</a></p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

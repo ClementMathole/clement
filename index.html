@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Personal portfolio of Clement Mathole - Software Developer">
+        <title>Clement-Mathole</title>
+        <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <a href="index.html" style="text-decoration: none;"><h1 class="brand">M</h1></a>
+                <div class="nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                    <div class="media-contacts mc-1">
+                    <ul>
+                        <li><a href="https://github.com/ClementMathole"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="media-contacts mc-2">
+                    <ul>
+                        <li><a href="https://github.com/ClementMathole"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div> 
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="home" id="home">
+                <div class="img"></div>
+                <p id="name">HI, I'M CLEMENT</p>
+                <h1>Software <span class="gradient-text">Developer</span>, Software <span class="gradient-text">Engineer</span> and Digital Designer</h1>
+                <p>I am a Full-Stack and Mobile Developer specializing in the .NET ecosystem, cloud architecture, and cross-platform mobile solutions. Based in South Africa , I design scalable, testable applications using clean engineering patterns to solve complex business problems.</p>
+                <div class="action-btn">
+                    <button id="explore-btn" onclick="window.location.href='projects.html'">Explore My Work</button>
+                </div>
+            </section>
+            <section class="services" id="services">
+                <p class="mini-title">WHAT I DO</p>
+                <div class="filters">
+                    <button>Frontend</button>
+                    <button>Backend</button>
+                    <button>UI/UX</button>
+                    <button>Cloud</button>
+                    <button>Automating</button>
+                </div>
+                <hr>
+                <div class="cards">
+                    <div class="card">
+                        <span><img src="./assets/icons8-c-sharp-logo-50.png" alt="c-sharp" width="20"/></span>
+                        <h2 class="card-title">Enterprise Backend Engineering</h2>
+                        <p class="card-desc">Highly maintainable, testable, and scalable web APIs and backend systems.</p>
+                    </div>
+                    <div class="card">
+                        <span><img src="./assets/icons8-flutter-50.png" alt="flutter" width="20"/></span>
+                        <h2 class="card-title">Cross-Platform Mobile Development</h2>
+                        <p class="card-desc">Engineering high-performance, responsive native mobile applications for iOS and Android from a single codebase.</p>
+                    </div>
+                    <div class="card">
+                        <span><img src="./assets/icons8-react-js-50.png" alt="react.js" width="20"/></span>
+                        <h2 class="card-title">Frontend Development</h2>
+                        <p class="card-desc">Interactive and responsive frontend experiences focused on usability and perfomance.</p>
+                    </div>
+                    <div class="card">
+                        <span><img src="./assets/icons8-figma-50.png" alt="figma" width="20"/></span>
+                        <h2 class="card-title">UI/UX Design</h2>
+                        <p class="card-desc">Minimal to complex interfaces focused on clarity, usability and aesthetics.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="bio-cta" id="about">
+                <div class="bio-cta-deco">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                    <div class="four "></div>
+                    <div class="five "></div>
+                    <div class="six "></div>
+                </div>
+                <div class="bio-cta-content">
+                    <h2>Beyond the Code</h2>
+                    <p>Discover the technical background, architectural approach, <br> and drive behind my work.</p>
+                    <button id="bio-cta-btn" onclick="window.location.href='about.html'">Read Full Bio</button>
+                </div>
+            </section>
+            <section class="projects">
+                <p class="mini-title">PROJECTS</p>
+                <hr>
+                <div class="projects-page-content">
+                    <div class="left">
+                        <h2 class="projects-page-title">Featured Projects</h2>
+                        <p class="project-desc">Selected work and eperiments in design and development.</p>
+                        <h1>17+</h1>
+                        <p id="last-child">completed projects</p>
+                    </div>
+                    <div class="right project-cards">
+                        <a href="https://github.com/ClementMathole/CapableZA">
+                            <div class="project-card">
+                                <div class="card-main-content">
+                                    <h2>Skills Audit System</h2>
+                                    <p>A cross-platform audit system designed to streamline the process of tracking, validating, and reporting employee competencies.</p>
+                                </div>
+                                <div class="project-card-footer">
+                                    <div class="project-stack">
+                                        <img src="./assets/icons8-c-sharp-logo-50.png" alt="csharp" width="20" />
+                                        <img src="./assets/icons8-flutter-50.png" alt="flutter" width="20">
+                                        <img src="./assets/icons8-firebase-48.png" alt="firebase" width="20"/>
+                                        <img src="./assets/icons8-jquery-50.png" alt="jquery" width="20" />
+                                        <img src="./assets/icons8-bootstrap-50.png" alt="bootstrap5" width="20"/>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="https://github.com/ClementMathole/local-nuget-cleaner">
+                            <div class="project-card">
+                                <div class="card-main-content">
+                                    <h2>Local NuGet Cache Cleaner</h2>
+                                    <p>Enterprise grade API built to safely identify and remove stale NuGet packages from global cache without breaking local builds.</p>
+                                </div>
+                                <div class="project-card-footer">
+                                    <div class="project-stack">
+                                        <img src="./assets/icons8-c-sharp-logo-50.png" alt="csharp" width="20" />
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; <span id="year"></span> Clement Mathole. All rights reserved.</p>
+                <p>icons by <a href="#">icons8</a></p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
